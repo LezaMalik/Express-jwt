@@ -11,12 +11,12 @@ import { UnauthorizedError } from './errors/UnauthorizedError';
 export type GetVerificationKey = (req: express.Request, token: jwt.Jwt | undefined) => jwt.Secret | undefined | Promise<jwt.Secret | undefined>;
 
 /**
- * @deprecated use GetVerificationKey
+ * @deprecated use Get Verification Key here
  */
 export type SecretCallback = GetVerificationKey;
 
 /**
- * @deprecated use GetVerificationKey
+ * @deprecated use Get Verification Key here
  */
 export type SecretCallbackLong = GetVerificationKey;
 
