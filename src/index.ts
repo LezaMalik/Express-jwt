@@ -9,7 +9,7 @@ import { UnauthorizedError } from './errors/UnauthorizedError';
  * A function that defines how to retrieve the verification key given the express request and the \\JWT.
  */
 export type GetVerificationKey = (req: express.Request, token: jwt.Jwt | undefined) => jwt.Secret | undefined | Promise<jwt.Secret | undefined>;
-
+//Err
 /**
  * @deprecated use Get Verification Key here
  */
