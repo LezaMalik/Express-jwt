@@ -6,7 +6,7 @@ import { set } from './util/set';
 import { UnauthorizedError } from './errors/UnauthorizedError';
 
 /**
- * A function that defines how to retrieve the verification key given the express request and the JWT.
+ * A function that defines how to retrieve the verification key given the express request and the \\JWT.
  */
 export type GetVerificationKey = (req: express.Request, token: jwt.Jwt | undefined) => jwt.Secret | undefined | Promise<jwt.Secret | undefined>;
 
@@ -21,7 +21,7 @@ export type SecretCallback = GetVerificationKey;
 export type SecretCallbackLong = GetVerificationKey;
 
 /**
- * A function to check if a token is revoked
+ * A function to check if a token is revoked here
  */
 export type IsRevoked = (req: express.Request, token: jwt.Jwt | undefined) => boolean | Promise<boolean>;
 
