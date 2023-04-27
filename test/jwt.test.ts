@@ -11,6 +11,7 @@ describe('failure tests', function () {
 
   it('should throw if options not sent', function () {
     try {
+      //Testing JWT
       // @ts-ignore
       expressjwt();
     } catch (e) {
